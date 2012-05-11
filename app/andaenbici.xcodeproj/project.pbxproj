@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		965148F314588B7A00F812DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965148F214588B7A00F812DB /* UIKit.framework */; };
+		965148F514588B7A00F812DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965148F414588B7A00F812DB /* Foundation.framework */; };
+		965148F714588B7A00F812DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965148F614588B7A00F812DB /* CoreGraphics.framework */; };
+		965148FD14588B7A00F812DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 965148FB14588B7A00F812DB /* InfoPlist.strings */; };
+		9651490014588B7A00F812DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 965148FF14588B7A00F812DB /* main.m */; };
+		9651490314588B7A00F812DB /* bicisendasAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9651490214588B7A00F812DB /* bicisendasAppDelegate.m */; };
+		9651490614588B7B00F812DB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9651490414588B7B00F812DB /* MainWindow.xib */; };
+		9651490914588B7B00F812DB /* NovedadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9651490814588B7B00F812DB /* NovedadesViewController.m */; };
+		9651490F14588B7B00F812DB /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9651490D14588B7B00F812DB /* FirstView.xib */; };
+		9651491914588B7C00F812DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965148F214588B7A00F812DB /* UIKit.framework */; };
+		9651491A14588B7C00F812DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965148F414588B7A00F812DB /* Foundation.framework */; };
+		9651491B14588B7C00F812DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965148F614588B7A00F812DB /* CoreGraphics.framework */; };
+		9651492314588B7C00F812DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9651492114588B7C00F812DB /* InfoPlist.strings */; };
+		9651492614588B7C00F812DB /* bicisendasTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9651492514588B7C00F812DB /* bicisendasTests.h */; };
+		9651492814588B7C00F812DB /* bicisendasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9651492714588B7C00F812DB /* bicisendasTests.m */; };
+		9686F300155DA0630092F5EA /* CicloviasOri.kml in Resources */ = {isa = PBXBuildFile; fileRef = 9686F2FF155DA0630092F5EA /* CicloviasOri.kml */; };
+		9686F303155DA2960092F5EA /* CiclovíasOri2.kml in Resources */ = {isa = PBXBuildFile; fileRef = 9686F302155DA2960092F5EA /* CiclovíasOri2.kml */; };
+		9686F311155DB01E0092F5EA /* EstacionDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9686F30E155DB01E0092F5EA /* EstacionDetail.xib */; };
+		9686F312155DB01E0092F5EA /* EstacionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9686F310155DB01E0092F5EA /* EstacionDetailViewController.m */; };
+		9686F315155DB03B0092F5EA /* EstacionesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9686F314155DB03B0092F5EA /* EstacionesViewController.m */; };
+		9686F319155DB0500092F5EA /* Estacion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9686F317155DB0500092F5EA /* Estacion.m */; };
+		9686F31A155DB0500092F5EA /* Estaciones.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9686F318155DB0500092F5EA /* Estaciones.xib */; };
+		9686F31D155DB0700092F5EA /* BaseMapBicisendaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9686F31C155DB0700092F5EA /* BaseMapBicisendaController.m */; };
+		96E9233D14599A4E00C8978B /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9233A14599A4E00C8978B /* 07-map-marker.png */; };
+		96E9233E14599A4E00C8978B /* 103-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9233B14599A4E00C8978B /* 103-map.png */; };
+		96E9233F14599A4E00C8978B /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9233C14599A4E00C8978B /* 53-house.png */; };
+		96E9234314599AB800C8978B /* LlegaEnBiciViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E9234114599AB800C8978B /* LlegaEnBiciViewController.m */; };
+		96E9234414599AB800C8978B /* LlegaEnBici.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E9234214599AB800C8978B /* LlegaEnBici.xib */; };
+		96F6E72B1459AA2F00F744F4 /* NewsPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F6E72A1459AA2F00F744F4 /* NewsPost.m */; };
+		96F6E72F1459B23300F744F4 /* NewsPostDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F6E72D1459B23300F744F4 /* NewsPostDetailsViewController.m */; };
+		96F6E7301459B23300F744F4 /* NewsPostDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F6E72E1459B23300F744F4 /* NewsPostDetailsViewController.xib */; };
+		96F6E7331459FDCA00F744F4 /* KMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F6E7311459FDCA00F744F4 /* KMLParser.m */; };
+		96F6E735145A01CD00F744F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F6E734145A01CD00F744F4 /* MapKit.framework */; };
+		96F6E737145A01F400F744F4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F6E736145A01F400F744F4 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9651491C14588B7C00F812DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965148E514588B7900F812DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965148ED14588B7900F812DB;
+			remoteInfo = bicisendas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		965148EE14588B7A00F812DB /* andaenbici.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = andaenbici.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		965148F214588B7A00F812DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		965148F414588B7A00F812DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		965148F614588B7A00F812DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		965148FA14588B7A00F812DB /* andaenbici-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "andaenbici-Info.plist"; sourceTree = "<group>"; };
+		965148FC14588B7A00F812DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		965148FE14588B7A00F812DB /* andaenbici-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "andaenbici-Prefix.pch"; sourceTree = "<group>"; };
+		965148FF14588B7A00F812DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9651490114588B7A00F812DB /* bicisendasAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bicisendasAppDelegate.h; sourceTree = "<group>"; };
+		9651490214588B7A00F812DB /* bicisendasAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bicisendasAppDelegate.m; sourceTree = "<group>"; };
+		9651490514588B7B00F812DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		9651490714588B7B00F812DB /* NovedadesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NovedadesViewController.h; sourceTree = "<group>"; };
+		9651490814588B7B00F812DB /* NovedadesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NovedadesViewController.m; sourceTree = "<group>"; };
+		9651490E14588B7B00F812DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		9651491814588B7C00F812DB /* andaenbiciTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = andaenbiciTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9651492014588B7C00F812DB /* andaenbiciTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "andaenbiciTests-Info.plist"; sourceTree = "<group>"; };
+		9651492214588B7C00F812DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9651492414588B7C00F812DB /* andaenbiciTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "andaenbiciTests-Prefix.pch"; sourceTree = "<group>"; };
+		9651492514588B7C00F812DB /* bicisendasTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bicisendasTests.h; sourceTree = "<group>"; };
+		9651492714588B7C00F812DB /* bicisendasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bicisendasTests.m; sourceTree = "<group>"; };
+		9686F2FF155DA0630092F5EA /* CicloviasOri.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CicloviasOri.kml; sourceTree = "<group>"; };
+		9686F302155DA2960092F5EA /* CiclovíasOri2.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "CiclovíasOri2.kml"; sourceTree = "<group>"; };
+		9686F30E155DB01E0092F5EA /* EstacionDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EstacionDetail.xib; sourceTree = "<group>"; };
+		9686F30F155DB01E0092F5EA /* EstacionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstacionDetailViewController.h; sourceTree = "<group>"; };
+		9686F310155DB01E0092F5EA /* EstacionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstacionDetailViewController.m; sourceTree = "<group>"; };
+		9686F313155DB03B0092F5EA /* EstacionesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstacionesViewController.h; sourceTree = "<group>"; };
+		9686F314155DB03B0092F5EA /* EstacionesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstacionesViewController.m; sourceTree = "<group>"; };
+		9686F316155DB0500092F5EA /* Estacion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Estacion.h; sourceTree = "<group>"; };
+		9686F317155DB0500092F5EA /* Estacion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Estacion.m; sourceTree = "<group>"; };
+		9686F318155DB0500092F5EA /* Estaciones.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Estaciones.xib; sourceTree = "<group>"; };
+		9686F31B155DB0700092F5EA /* BaseMapBicisendaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapBicisendaController.h; sourceTree = "<group>"; };
+		9686F31C155DB0700092F5EA /* BaseMapBicisendaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapBicisendaController.m; sourceTree = "<group>"; };
+		96E9233A14599A4E00C8978B /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-map-marker.png"; sourceTree = "<group>"; };
+		96E9233B14599A4E00C8978B /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "103-map.png"; sourceTree = "<group>"; };
+		96E9233C14599A4E00C8978B /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
+		96E9234014599AB800C8978B /* LlegaEnBiciViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LlegaEnBiciViewController.h; sourceTree = "<group>"; };
+		96E9234114599AB800C8978B /* LlegaEnBiciViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LlegaEnBiciViewController.m; sourceTree = "<group>"; };
+		96E9234214599AB800C8978B /* LlegaEnBici.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LlegaEnBici.xib; sourceTree = "<group>"; };
+		96F6E7291459AA2F00F744F4 /* NewsPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsPost.h; sourceTree = "<group>"; };
+		96F6E72A1459AA2F00F744F4 /* NewsPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsPost.m; sourceTree = "<group>"; };
+		96F6E72C1459B23300F744F4 /* NewsPostDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsPostDetailsViewController.h; sourceTree = "<group>"; };
+		96F6E72D1459B23300F744F4 /* NewsPostDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsPostDetailsViewController.m; sourceTree = "<group>"; };
+		96F6E72E1459B23300F744F4 /* NewsPostDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsPostDetailsViewController.xib; sourceTree = "<group>"; };
+		96F6E7311459FDCA00F744F4 /* KMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMLParser.m; sourceTree = "<group>"; };
+		96F6E7321459FDCA00F744F4 /* KMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMLParser.h; sourceTree = "<group>"; };
+		96F6E734145A01CD00F744F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		96F6E736145A01F400F744F4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		965148EB14588B7900F812DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F6E737145A01F400F744F4 /* CoreLocation.framework in Frameworks */,
+				96F6E735145A01CD00F744F4 /* MapKit.framework in Frameworks */,
+				965148F314588B7A00F812DB /* UIKit.framework in Frameworks */,
+				965148F514588B7A00F812DB /* Foundation.framework in Frameworks */,
+				965148F714588B7A00F812DB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9651491414588B7C00F812DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9651491914588B7C00F812DB /* UIKit.framework in Frameworks */,
+				9651491A14588B7C00F812DB /* Foundation.framework in Frameworks */,
+				9651491B14588B7C00F812DB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		965148E314588B7900F812DB = {
+			isa = PBXGroup;
+			children = (
+				965148F814588B7A00F812DB /* andaenbici */,
+				9651491E14588B7C00F812DB /* andaenbiciTests */,
+				965148F114588B7A00F812DB /* Frameworks */,
+				965148EF14588B7A00F812DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		965148EF14588B7A00F812DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				965148EE14588B7A00F812DB /* andaenbici.app */,
+				9651491814588B7C00F812DB /* andaenbiciTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		965148F114588B7A00F812DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96F6E736145A01F400F744F4 /* CoreLocation.framework */,
+				96F6E734145A01CD00F744F4 /* MapKit.framework */,
+				965148F214588B7A00F812DB /* UIKit.framework */,
+				965148F414588B7A00F812DB /* Foundation.framework */,
+				965148F614588B7A00F812DB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		965148F814588B7A00F812DB /* andaenbici */ = {
+			isa = PBXGroup;
+			children = (
+				9686F31B155DB0700092F5EA /* BaseMapBicisendaController.h */,
+				9686F31C155DB0700092F5EA /* BaseMapBicisendaController.m */,
+				9686F316155DB0500092F5EA /* Estacion.h */,
+				9686F317155DB0500092F5EA /* Estacion.m */,
+				9686F318155DB0500092F5EA /* Estaciones.xib */,
+				9686F313155DB03B0092F5EA /* EstacionesViewController.h */,
+				9686F314155DB03B0092F5EA /* EstacionesViewController.m */,
+				9686F30E155DB01E0092F5EA /* EstacionDetail.xib */,
+				9686F30F155DB01E0092F5EA /* EstacionDetailViewController.h */,
+				9686F310155DB01E0092F5EA /* EstacionDetailViewController.m */,
+				96F6E7311459FDCA00F744F4 /* KMLParser.m */,
+				96F6E7321459FDCA00F744F4 /* KMLParser.h */,
+				96F6E72C1459B23300F744F4 /* NewsPostDetailsViewController.h */,
+				96F6E72D1459B23300F744F4 /* NewsPostDetailsViewController.m */,
+				96F6E72E1459B23300F744F4 /* NewsPostDetailsViewController.xib */,
+				96E9234014599AB800C8978B /* LlegaEnBiciViewController.h */,
+				96E9234114599AB800C8978B /* LlegaEnBiciViewController.m */,
+				96E9234214599AB800C8978B /* LlegaEnBici.xib */,
+				96E9233914599A4E00C8978B /* resources */,
+				9651490114588B7A00F812DB /* bicisendasAppDelegate.h */,
+				9651490214588B7A00F812DB /* bicisendasAppDelegate.m */,
+				9651490414588B7B00F812DB /* MainWindow.xib */,
+				9651490714588B7B00F812DB /* NovedadesViewController.h */,
+				9651490814588B7B00F812DB /* NovedadesViewController.m */,
+				9651490D14588B7B00F812DB /* FirstView.xib */,
+				965148F914588B7A00F812DB /* Supporting Files */,
+				96F6E7291459AA2F00F744F4 /* NewsPost.h */,
+				96F6E72A1459AA2F00F744F4 /* NewsPost.m */,
+			);
+			name = andaenbici;
+			path = bicisendas;
+			sourceTree = "<group>";
+		};
+		965148F914588B7A00F812DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				965148FA14588B7A00F812DB /* andaenbici-Info.plist */,
+				965148FB14588B7A00F812DB /* InfoPlist.strings */,
+				965148FE14588B7A00F812DB /* andaenbici-Prefix.pch */,
+				965148FF14588B7A00F812DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9651491E14588B7C00F812DB /* andaenbiciTests */ = {
+			isa = PBXGroup;
+			children = (
+				9651492514588B7C00F812DB /* bicisendasTests.h */,
+				9651492714588B7C00F812DB /* bicisendasTests.m */,
+				9651491F14588B7C00F812DB /* Supporting Files */,
+			);
+			name = andaenbiciTests;
+			path = bicisendasTests;
+			sourceTree = "<group>";
+		};
+		9651491F14588B7C00F812DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9651492014588B7C00F812DB /* andaenbiciTests-Info.plist */,
+				9651492114588B7C00F812DB /* InfoPlist.strings */,
+				9651492414588B7C00F812DB /* andaenbiciTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96E9233914599A4E00C8978B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				9686F302155DA2960092F5EA /* CiclovíasOri2.kml */,
+				9686F2FF155DA0630092F5EA /* CicloviasOri.kml */,
+				96E9233A14599A4E00C8978B /* 07-map-marker.png */,
+				96E9233B14599A4E00C8978B /* 103-map.png */,
+				96E9233C14599A4E00C8978B /* 53-house.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		965148ED14588B7900F812DB /* andaenbici */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9651492B14588B7C00F812DB /* Build configuration list for PBXNativeTarget "andaenbici" */;
+			buildPhases = (
+				965148EA14588B7900F812DB /* Sources */,
+				965148EB14588B7900F812DB /* Frameworks */,
+				965148EC14588B7900F812DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = andaenbici;
+			productName = bicisendas;
+			productReference = 965148EE14588B7A00F812DB /* andaenbici.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9651491714588B7C00F812DB /* andaenbiciTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9651492E14588B7C00F812DB /* Build configuration list for PBXNativeTarget "andaenbiciTests" */;
+			buildPhases = (
+				9651491314588B7C00F812DB /* Sources */,
+				9651491414588B7C00F812DB /* Frameworks */,
+				9651491514588B7C00F812DB /* Resources */,
+				9651491614588B7C00F812DB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9651491D14588B7C00F812DB /* PBXTargetDependency */,
+			);
+			name = andaenbiciTests;
+			productName = bicisendasTests;
+			productReference = 9651491814588B7C00F812DB /* andaenbiciTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		965148E514588B7900F812DB /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 965148E814588B7900F812DB /* Build configuration list for PBXProject "andaenbici" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 965148E314588B7900F812DB;
+			productRefGroup = 965148EF14588B7A00F812DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				965148ED14588B7900F812DB /* andaenbici */,
+				9651491714588B7C00F812DB /* andaenbiciTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		965148EC14588B7900F812DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965148FD14588B7A00F812DB /* InfoPlist.strings in Resources */,
+				9651490614588B7B00F812DB /* MainWindow.xib in Resources */,
+				9651490F14588B7B00F812DB /* FirstView.xib in Resources */,
+				96E9233D14599A4E00C8978B /* 07-map-marker.png in Resources */,
+				96E9233E14599A4E00C8978B /* 103-map.png in Resources */,
+				96E9233F14599A4E00C8978B /* 53-house.png in Resources */,
+				96E9234414599AB800C8978B /* LlegaEnBici.xib in Resources */,
+				96F6E7301459B23300F744F4 /* NewsPostDetailsViewController.xib in Resources */,
+				9686F300155DA0630092F5EA /* CicloviasOri.kml in Resources */,
+				9686F303155DA2960092F5EA /* CiclovíasOri2.kml in Resources */,
+				9686F311155DB01E0092F5EA /* EstacionDetail.xib in Resources */,
+				9686F31A155DB0500092F5EA /* Estaciones.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9651491514588B7C00F812DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9651492314588B7C00F812DB /* InfoPlist.strings in Resources */,
+				9651492614588B7C00F812DB /* bicisendasTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9651491614588B7C00F812DB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		965148EA14588B7900F812DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9651490014588B7A00F812DB /* main.m in Sources */,
+				9651490314588B7A00F812DB /* bicisendasAppDelegate.m in Sources */,
+				9651490914588B7B00F812DB /* NovedadesViewController.m in Sources */,
+				96E9234314599AB800C8978B /* LlegaEnBiciViewController.m in Sources */,
+				96F6E72B1459AA2F00F744F4 /* NewsPost.m in Sources */,
+				96F6E72F1459B23300F744F4 /* NewsPostDetailsViewController.m in Sources */,
+				96F6E7331459FDCA00F744F4 /* KMLParser.m in Sources */,
+				9686F312155DB01E0092F5EA /* EstacionDetailViewController.m in Sources */,
+				9686F315155DB03B0092F5EA /* EstacionesViewController.m in Sources */,
+				9686F319155DB0500092F5EA /* Estacion.m in Sources */,
+				9686F31D155DB0700092F5EA /* BaseMapBicisendaController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9651491314588B7C00F812DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9651492814588B7C00F812DB /* bicisendasTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9651491D14588B7C00F812DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965148ED14588B7900F812DB /* andaenbici */;
+			targetProxy = 9651491C14588B7C00F812DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		965148FB14588B7A00F812DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965148FC14588B7A00F812DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9651490414588B7B00F812DB /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9651490514588B7B00F812DB /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		9651490D14588B7B00F812DB /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9651490E14588B7B00F812DB /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		9651492114588B7C00F812DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9651492214588B7C00F812DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9651492914588B7C00F812DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9651492A14588B7C00F812DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		9651492C14588B7C00F812DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bicisendas/andaenbici-Prefix.pch";
+				INFOPLIST_FILE = "bicisendas/andaenbici-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = andaenbici;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9651492D14588B7C00F812DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bicisendas/andaenbici-Prefix.pch";
+				INFOPLIST_FILE = "bicisendas/andaenbici-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = andaenbici;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9651492F14588B7C00F812DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bicisendas.app/bicisendas";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bicisendasTests/andaenbiciTests-Prefix.pch";
+				INFOPLIST_FILE = "bicisendasTests/andaenbiciTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = andaenbiciTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9651493014588B7C00F812DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bicisendas.app/bicisendas";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bicisendasTests/andaenbiciTests-Prefix.pch";
+				INFOPLIST_FILE = "bicisendasTests/andaenbiciTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = andaenbiciTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		965148E814588B7900F812DB /* Build configuration list for PBXProject "andaenbici" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9651492914588B7C00F812DB /* Debug */,
+				9651492A14588B7C00F812DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9651492B14588B7C00F812DB /* Build configuration list for PBXNativeTarget "andaenbici" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9651492C14588B7C00F812DB /* Debug */,
+				9651492D14588B7C00F812DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9651492E14588B7C00F812DB /* Build configuration list for PBXNativeTarget "andaenbiciTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9651492F14588B7C00F812DB /* Debug */,
+				9651493014588B7C00F812DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 965148E514588B7900F812DB /* Project object */;
+}

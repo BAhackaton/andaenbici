@@ -22,7 +22,7 @@
    $startEdge = findNearestEdge($startPoint, $dbcon);
    $endEdge   = findNearestEdge($endPoint, $dbcon);
 
-   $sql = 	"SELECT nomb_ca_co as nombre, least(alt_ii, alt_di) as desde, greatest(alt_if, alt_df) as hasta, tipo_c, ST_AsGeoJSON(geom) as geom FROM shortest_path('
+   $sql = 	"SELECT nomb_ca_co as nombre, least(alt_ii, alt_di) as desde, greatest(alt_if, alt_df) as hasta, tipo_c, tiene_ciclovia, ST_AsGeoJSON(geom) as geom FROM shortest_path('
                 SELECT gid as id,
                          source::integer,
                          target::integer,
@@ -40,8 +40,17 @@
    // Add edges to GeoJSON array
    while($edge=pg_fetch_assoc($query)) {  
 
-		$edge['geom'] = json_decode($edge['geom']); 
- 		array_push($geojson, $edge);
+		$geo = json_decode($edge['geom']); 
+		if (is_object($geo)) {
+		$coords = $geo->coordinates; 		
+		$coords = $coords[0];
+		foreach($coords as $coorditem) {
+
+		$copy = $edge;
+		$copy['geom'] = $coorditem;
+		array_push($geojson, $copy);
+		}
+	}
    }
 
 	

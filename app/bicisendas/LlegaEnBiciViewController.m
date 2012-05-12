@@ -28,8 +28,10 @@
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (void)viewDidLoad {
-    diretions = [[UICGDirections alloc] init];
-    diretions.delegate = self;
+    //diretions = [[UICGDirections alloc] init];
+    directionsBike = [[Directions alloc] init];
+    //diretions.delegate = self;
+    directionsBike.delegate = self;
     
     //add current gas station annotation
     CLLocationCoordinate2D coordinate;
@@ -107,6 +109,7 @@
         NSLog(currentLocation);
         NSLog(endPoint);
         [diretions loadWithStartPoint:currentLocation endPoint:endPoint options:options];
+        [directionsBike loadWithStartPoint:currentLocation endPoint:endPoint];
 	}
 }
 
@@ -309,6 +312,36 @@
 	
 }
 
+
+- (void)didUpdateDirections:(NSArray *)directions
+{
+	
+    NSLog(@"Directions: %@",directions);
+    NSMutableArray *routePoints = [NSMutableArray array];
+    for (NSDictionary * direction in directions) {
+        //NSLog(@"Direction: %@",direction);
+        NSArray *geom = [direction objectForKey:@"geom"];
+        CLLocationCoordinate2D point = CLLocationCoordinate2DMake([[geom objectAtIndex:1] floatValue], [[geom objectAtIndex:0] floatValue]);
+        NSLog(@"Point: %f,%f",point);
+        CLLocation *routePoint = [[CLLocation alloc] initWithLatitude:point.latitude longitude:point.longitude];
+        [routePoints addObject:routePoint];
+    }
+    
+    //[routeOverlayView setRoutes:routePoints];
+    [self setupRouteLine:routePoints];
+    
+    //add user position annotation
+    selfAnnotation = [[OwnPositionAnnotation alloc] init];
+    selfAnnotationView = [[OwnPositionAnnotationView alloc] initWithAnnotation:selfAnnotation reuseIdentifier:NSStringFromClass([selfAnnotationView class])];
+    [mapView addAnnotation:selfAnnotation];
+    
+    //add current gas station annotation
+    GoalAnnotation * endAnnotation = [[[GoalAnnotation alloc] init] autorelease];
+    [endAnnotation setCoordinate:((CLLocation*)[routePoints lastObject]).coordinate];
+    
+    [mapView addAnnotation:endAnnotation];
+}
+
 - (void)directionsDidUpdateDirections:(UICGDirections *)directions {
 	
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
@@ -328,10 +361,9 @@
         //add current gas station annotation
         GoalAnnotation * endAnnotation = [[[GoalAnnotation alloc] init] autorelease];
         
-        //[endAnnotation setCoordinate:((CLLocation*)[routePoints lastObject]).coordinate];
+        [endAnnotation setCoordinate:((CLLocation*)[routePoints lastObject]).coordinate];
         
         [mapView addAnnotation:endAnnotation];
-    
     }
 	hasPin = true;
 }

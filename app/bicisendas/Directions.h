@@ -10,7 +10,7 @@
 
 @protocol DirectionsDelegateProtocol <NSObject>
 @required
-- (void)directionsDidUpdateDirections:(NSArray *)directions;
+- (void)didUpdateDirections:(NSArray *)directions;
 @end
 
 @interface Directions : NSObject
@@ -21,6 +21,6 @@
 @property(nonatomic, assign) id <DirectionsDelegateProtocol> delegate;
 
 - (void) loadWithStartPoint:(NSString*)currentLocation endPoint:(NSString*)sendPoint;
-- (void)directionsDidUpdateDirections:(NSArray *)directions;
+- (void)didUpdateDirections:(NSArray *)directions;
 
 @end

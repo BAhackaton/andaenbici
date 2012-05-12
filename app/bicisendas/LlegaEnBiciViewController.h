@@ -19,6 +19,7 @@
 
 @interface LlegaEnBiciViewController : BaseMapBicisendaController <UICGDirectionsDelegate,DirectionsDelegateProtocol,UISearchBarDelegate, BSForwardGeocoderDelegate, UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate, UISearchBarDelegate>{
 	UICGDirections *diretions;
+    Directions *directionsBike;
 	NSString *startPoint;
 	NSString *endPoint;
 	NSString *endPointTitle;

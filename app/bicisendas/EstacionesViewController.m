@@ -11,7 +11,19 @@
 
 @implementation EstacionesViewController
 
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+- (void)viewDidLoad
+{
+    kml = [KMLParser parseKMLAtPath:[[NSBundle mainBundle] pathForResource:@"CicloviasOri" ofType:@"kml"]];
+    
+    [super viewDidLoad];
+    
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view 
+    
+    
+
+    calloutAccessoryControlTapped:(UIControl *)control {
 
     if (!detailView) {
         detailView = [[EstacionDetailViewController alloc] initWithNibName:@"EstacionDetail" bundle:[NSBundle mainBundle]];

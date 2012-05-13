@@ -26,12 +26,16 @@
     
     [mapView setRegion:MKCoordinateRegionMake(CLLocationCoordinate2DMake(-34.604407, -58.392313), MKCoordinateSpanMake(.1, .1)) animated:NO];    
     
-    // Locate the path to the route.kml file in the application's bundle
-    // and parse it with the KMLParser.
-    kml = [KMLParser parseKMLAtPath:[[NSBundle mainBundle] pathForResource:@"CicloviasOri" ofType:@"kml"]];
+    selfAnnotation = [[OwnPositionAnnotation alloc] init];
+    selfAnnotationView = [[OwnPositionAnnotationView alloc] initWithAnnotation:selfAnnotation reuseIdentifier:NSStringFromClass([selfAnnotationView class])];
+    
+
     
     [mapView addOverlays:[self getOverlays]];
     [mapView addAnnotations:[self getAnnotations]];
+    
+    NSLog(@"Own anotation: %@",selfAnnotation);
+    //[mapView addAnnotation:selfAnnotation];
 
 }
 
@@ -40,7 +44,7 @@
 }
 
 - (NSArray*) getAnnotations {
-    return [kml points];
+    return [[kml points] arrayByAddingObject:selfAnnotation];
 }
 
 
@@ -52,6 +56,10 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
+    if([annotation isKindOfClass:[OwnPositionAnnotation class]]) 
+    {
+        return selfAnnotationView;
+    }
     MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pinView"];
     if (!pinView) {
         pinView = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pinView"] autorelease];
@@ -69,6 +77,13 @@
     }
     return pinView;
 }
+
+- (void) currentPositionDidChange
+{
+    [mapView removeAnnotation:selfAnnotation];
+    [mapView addAnnotation: selfAnnotation];
+}
+
 
 - (void)viewDidUnload
 {

@@ -7,13 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67054B1F155DBE2C00527424 /* BSForwardGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 67054B18155DBE2C00527424 /* BSForwardGeocoder.m */; };
+		67054B20155DBE2C00527424 /* BSKmlResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 67054B1A155DBE2C00527424 /* BSKmlResult.m */; };
+		67054B21155DBE2C00527424 /* BSAddressComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 67054B1C155DBE2C00527424 /* BSAddressComponent.m */; };
+		67054B22155DBE2C00527424 /* NSString+URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 67054B1E155DBE2C00527424 /* NSString+URLEncode.m */; };
+		67054B28155DBE4800527424 /* BSGoogleV2KmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 67054B25155DBE4800527424 /* BSGoogleV2KmlParser.m */; };
+		67054B29155DBE4800527424 /* BSGoogleV3KmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 67054B27155DBE4800527424 /* BSGoogleV3KmlParser.m */; };
+		67054B2D155DBF8600527424 /* STLocationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 67054B2C155DBF8600527424 /* STLocationEngine.m */; };
+		67054B32155DC0C100527424 /* OwnPositionAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 67054B2F155DC0C000527424 /* OwnPositionAnnotation.m */; };
+		67054B33155DC0C100527424 /* OwnPositionAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67054B31155DC0C100527424 /* OwnPositionAnnotationView.m */; };
+		67A2D213155EB5930055500E /* map_annotation_goal.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A2D212155EB5930055500E /* map_annotation_goal.png */; };
+		67A2D21A155EB9AE0055500E /* PinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A2D219155EB9AE0055500E /* PinAnnotation.m */; };
+		67A2D220155EC2F60055500E /* api.html in Resources */ = {isa = PBXBuildFile; fileRef = 67A2D21F155EC2F60055500E /* api.html */; };
+		67A2D22F155ECC920055500E /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A2D224155ECC920055500E /* NSObject+SBJSON.m */; };
+		67A2D230155ECC920055500E /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A2D226155ECC920055500E /* NSString+SBJSON.m */; };
+		67A2D231155ECC920055500E /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A2D228155ECC920055500E /* SBJSON.m */; };
+		67A2D232155ECC920055500E /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A2D22A155ECC920055500E /* SBJsonBase.m */; };
+		67A2D233155ECC920055500E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A2D22C155ECC920055500E /* SBJsonParser.m */; };
+		67A2D234155ECC920055500E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A2D22E155ECC920055500E /* SBJsonWriter.m */; };
+		67A2D29E155EE9BE0055500E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A2D29C155EE4060055500E /* libxml2.dylib */; };
+		67A2D2A9155EEDAB0055500E /* Directions.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A2D2A8155EEDAA0055500E /* Directions.m */; };
+		67B9CC5B155EA138003BC6CC /* map_annotation_self.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B9CC5A155EA138003BC6CC /* map_annotation_self.png */; };
+		67B9CC67155EA328003BC6CC /* CustomLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC62155EA328003BC6CC /* CustomLoaderViewController.m */; };
+		67B9CC69155EA328003BC6CC /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC66155EA328003BC6CC /* MapPoint.m */; };
+		67B9CC7A155EA37C003BC6CC /* UICGDirections.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC6D155EA37C003BC6CC /* UICGDirections.m */; };
+		67B9CC7B155EA37C003BC6CC /* UICGDirectionsOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC6F155EA37C003BC6CC /* UICGDirectionsOptions.m */; };
+		67B9CC7C155EA37C003BC6CC /* UICGClientGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC71155EA37C003BC6CC /* UICGClientGeocoder.m */; };
+		67B9CC7D155EA37C003BC6CC /* UICGRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC73155EA37C003BC6CC /* UICGRoute.m */; };
+		67B9CC7E155EA37C003BC6CC /* UICGStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC75155EA37C003BC6CC /* UICGStep.m */; };
+		67B9CC7F155EA37C003BC6CC /* UICGPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC77155EA37C003BC6CC /* UICGPolyline.m */; };
+		67B9CC80155EA37C003BC6CC /* UICGoogleMapsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC79155EA37C003BC6CC /* UICGoogleMapsAPI.m */; };
+		67B9CC86155EA392003BC6CC /* UICRouteOverlayMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC83155EA392003BC6CC /* UICRouteOverlayMapView.m */; };
+		67B9CC87155EA392003BC6CC /* UICRouteAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC85155EA392003BC6CC /* UICRouteAnnotation.m */; };
+		67B9CC8A155EA808003BC6CC /* GoalAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9CC89155EA808003BC6CC /* GoalAnnotation.m */; };
+		67F9AC66155EAB530093C8F3 /* GoalAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9AC65155EAB530093C8F3 /* GoalAnnotationView.m */; };
 		965148F314588B7A00F812DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965148F214588B7A00F812DB /* UIKit.framework */; };
 		965148F514588B7A00F812DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965148F414588B7A00F812DB /* Foundation.framework */; };
 		965148F714588B7A00F812DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965148F614588B7A00F812DB /* CoreGraphics.framework */; };
 		965148FD14588B7A00F812DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 965148FB14588B7A00F812DB /* InfoPlist.strings */; };
 		9651490014588B7A00F812DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 965148FF14588B7A00F812DB /* main.m */; };
 		9651490314588B7A00F812DB /* bicisendasAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9651490214588B7A00F812DB /* bicisendasAppDelegate.m */; };
-		9651490614588B7B00F812DB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9651490414588B7B00F812DB /* MainWindow.xib */; };
 		9651490914588B7B00F812DB /* NovedadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9651490814588B7B00F812DB /* NovedadesViewController.m */; };
 		9651490F14588B7B00F812DB /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9651490D14588B7B00F812DB /* FirstView.xib */; };
 		9651491914588B7C00F812DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965148F214588B7A00F812DB /* UIKit.framework */; };
@@ -54,6 +87,72 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67054B17155DBE2C00527424 /* BSForwardGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSForwardGeocoder.h; sourceTree = "<group>"; };
+		67054B18155DBE2C00527424 /* BSForwardGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSForwardGeocoder.m; sourceTree = "<group>"; };
+		67054B19155DBE2C00527424 /* BSKmlResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSKmlResult.h; sourceTree = "<group>"; };
+		67054B1A155DBE2C00527424 /* BSKmlResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSKmlResult.m; sourceTree = "<group>"; };
+		67054B1B155DBE2C00527424 /* BSAddressComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAddressComponent.h; sourceTree = "<group>"; };
+		67054B1C155DBE2C00527424 /* BSAddressComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAddressComponent.m; sourceTree = "<group>"; };
+		67054B1D155DBE2C00527424 /* NSString+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncode.h"; sourceTree = "<group>"; };
+		67054B1E155DBE2C00527424 /* NSString+URLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncode.m"; sourceTree = "<group>"; };
+		67054B24155DBE4800527424 /* BSGoogleV2KmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGoogleV2KmlParser.h; sourceTree = "<group>"; };
+		67054B25155DBE4800527424 /* BSGoogleV2KmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGoogleV2KmlParser.m; sourceTree = "<group>"; };
+		67054B26155DBE4800527424 /* BSGoogleV3KmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGoogleV3KmlParser.h; sourceTree = "<group>"; };
+		67054B27155DBE4800527424 /* BSGoogleV3KmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGoogleV3KmlParser.m; sourceTree = "<group>"; };
+		67054B2B155DBF8600527424 /* STLocationEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLocationEngine.h; sourceTree = "<group>"; };
+		67054B2C155DBF8600527424 /* STLocationEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLocationEngine.m; sourceTree = "<group>"; };
+		67054B2E155DC0C000527424 /* OwnPositionAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnPositionAnnotation.h; sourceTree = "<group>"; };
+		67054B2F155DC0C000527424 /* OwnPositionAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnPositionAnnotation.m; sourceTree = "<group>"; };
+		67054B30155DC0C100527424 /* OwnPositionAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnPositionAnnotationView.h; sourceTree = "<group>"; };
+		67054B31155DC0C100527424 /* OwnPositionAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnPositionAnnotationView.m; sourceTree = "<group>"; };
+		67054B34155DC1A500527424 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		67A2D212155EB5930055500E /* map_annotation_goal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_annotation_goal.png; sourceTree = "<group>"; };
+		67A2D218155EB9AE0055500E /* PinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinAnnotation.h; sourceTree = "<group>"; };
+		67A2D219155EB9AE0055500E /* PinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinAnnotation.m; sourceTree = "<group>"; };
+		67A2D21F155EC2F60055500E /* api.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = api.html; sourceTree = "<group>"; };
+		67A2D222155ECC920055500E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		67A2D223155ECC920055500E /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		67A2D224155ECC920055500E /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		67A2D225155ECC920055500E /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		67A2D226155ECC920055500E /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		67A2D227155ECC920055500E /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		67A2D228155ECC920055500E /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		67A2D229155ECC920055500E /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		67A2D22A155ECC920055500E /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		67A2D22B155ECC920055500E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		67A2D22C155ECC920055500E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		67A2D22D155ECC920055500E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		67A2D22E155ECC920055500E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		67A2D29C155EE4060055500E /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		67A2D2A7155EEDA90055500E /* Directions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Directions.h; sourceTree = "<group>"; };
+		67A2D2A8155EEDAA0055500E /* Directions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Directions.m; sourceTree = "<group>"; };
+		67B9CC5A155EA138003BC6CC /* map_annotation_self.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_annotation_self.png; sourceTree = "<group>"; };
+		67B9CC61155EA328003BC6CC /* CustomLoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLoaderViewController.h; sourceTree = "<group>"; };
+		67B9CC62155EA328003BC6CC /* CustomLoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLoaderViewController.m; sourceTree = "<group>"; };
+		67B9CC65155EA328003BC6CC /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		67B9CC66155EA328003BC6CC /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
+		67B9CC6C155EA37C003BC6CC /* UICGDirections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICGDirections.h; sourceTree = "<group>"; };
+		67B9CC6D155EA37C003BC6CC /* UICGDirections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICGDirections.m; sourceTree = "<group>"; };
+		67B9CC6E155EA37C003BC6CC /* UICGDirectionsOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICGDirectionsOptions.h; sourceTree = "<group>"; };
+		67B9CC6F155EA37C003BC6CC /* UICGDirectionsOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICGDirectionsOptions.m; sourceTree = "<group>"; };
+		67B9CC70155EA37C003BC6CC /* UICGClientGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICGClientGeocoder.h; sourceTree = "<group>"; };
+		67B9CC71155EA37C003BC6CC /* UICGClientGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICGClientGeocoder.m; sourceTree = "<group>"; };
+		67B9CC72155EA37C003BC6CC /* UICGRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICGRoute.h; sourceTree = "<group>"; };
+		67B9CC73155EA37C003BC6CC /* UICGRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICGRoute.m; sourceTree = "<group>"; };
+		67B9CC74155EA37C003BC6CC /* UICGStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICGStep.h; sourceTree = "<group>"; };
+		67B9CC75155EA37C003BC6CC /* UICGStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICGStep.m; sourceTree = "<group>"; };
+		67B9CC76155EA37C003BC6CC /* UICGPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICGPolyline.h; sourceTree = "<group>"; };
+		67B9CC77155EA37C003BC6CC /* UICGPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICGPolyline.m; sourceTree = "<group>"; };
+		67B9CC78155EA37C003BC6CC /* UICGoogleMapsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICGoogleMapsAPI.h; sourceTree = "<group>"; };
+		67B9CC79155EA37C003BC6CC /* UICGoogleMapsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICGoogleMapsAPI.m; sourceTree = "<group>"; };
+		67B9CC82155EA392003BC6CC /* UICRouteOverlayMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICRouteOverlayMapView.h; sourceTree = "<group>"; };
+		67B9CC83155EA392003BC6CC /* UICRouteOverlayMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICRouteOverlayMapView.m; sourceTree = "<group>"; };
+		67B9CC84155EA392003BC6CC /* UICRouteAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICRouteAnnotation.h; sourceTree = "<group>"; };
+		67B9CC85155EA392003BC6CC /* UICRouteAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICRouteAnnotation.m; sourceTree = "<group>"; };
+		67B9CC88155EA808003BC6CC /* GoalAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalAnnotation.h; sourceTree = "<group>"; };
+		67B9CC89155EA808003BC6CC /* GoalAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalAnnotation.m; sourceTree = "<group>"; };
+		67F9AC64155EAB530093C8F3 /* GoalAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalAnnotationView.h; sourceTree = "<group>"; };
+		67F9AC65155EAB530093C8F3 /* GoalAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalAnnotationView.m; sourceTree = "<group>"; };
 		965148EE14588B7A00F812DB /* andaenbici.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = andaenbici.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965148F214588B7A00F812DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		965148F414588B7A00F812DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,7 +163,6 @@
 		965148FF14588B7A00F812DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9651490114588B7A00F812DB /* bicisendasAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bicisendasAppDelegate.h; sourceTree = "<group>"; };
 		9651490214588B7A00F812DB /* bicisendasAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bicisendasAppDelegate.m; sourceTree = "<group>"; };
-		9651490514588B7B00F812DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		9651490714588B7B00F812DB /* NovedadesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NovedadesViewController.h; sourceTree = "<group>"; };
 		9651490814588B7B00F812DB /* NovedadesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NovedadesViewController.m; sourceTree = "<group>"; };
 		9651490E14588B7B00F812DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
@@ -108,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A2D29E155EE9BE0055500E /* libxml2.dylib in Frameworks */,
 				96F6E737145A01F400F744F4 /* CoreLocation.framework in Frameworks */,
 				96F6E735145A01CD00F744F4 /* MapKit.framework in Frameworks */,
 				965148F314588B7A00F812DB /* UIKit.framework in Frameworks */,
@@ -129,6 +228,123 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67054B15155DBE0300527424 /* FowardGeocoding */ = {
+			isa = PBXGroup;
+			children = (
+				67054B23155DBE3600527424 /* Parsers */,
+				67054B17155DBE2C00527424 /* BSForwardGeocoder.h */,
+				67054B18155DBE2C00527424 /* BSForwardGeocoder.m */,
+				67054B19155DBE2C00527424 /* BSKmlResult.h */,
+				67054B1A155DBE2C00527424 /* BSKmlResult.m */,
+				67054B1B155DBE2C00527424 /* BSAddressComponent.h */,
+				67054B1C155DBE2C00527424 /* BSAddressComponent.m */,
+				67054B1D155DBE2C00527424 /* NSString+URLEncode.h */,
+				67054B1E155DBE2C00527424 /* NSString+URLEncode.m */,
+			);
+			name = FowardGeocoding;
+			sourceTree = "<group>";
+		};
+		67054B23155DBE3600527424 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				67054B24155DBE4800527424 /* BSGoogleV2KmlParser.h */,
+				67054B25155DBE4800527424 /* BSGoogleV2KmlParser.m */,
+				67054B26155DBE4800527424 /* BSGoogleV3KmlParser.h */,
+				67054B27155DBE4800527424 /* BSGoogleV3KmlParser.m */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		6776ECB8155DC53900739ADE /* Anotations */ = {
+			isa = PBXGroup;
+			children = (
+				67A2D218155EB9AE0055500E /* PinAnnotation.h */,
+				67A2D219155EB9AE0055500E /* PinAnnotation.m */,
+				67054B2E155DC0C000527424 /* OwnPositionAnnotation.h */,
+				67054B2F155DC0C000527424 /* OwnPositionAnnotation.m */,
+				67054B30155DC0C100527424 /* OwnPositionAnnotationView.h */,
+				67054B31155DC0C100527424 /* OwnPositionAnnotationView.m */,
+				67F9AC64155EAB530093C8F3 /* GoalAnnotationView.h */,
+				67F9AC65155EAB530093C8F3 /* GoalAnnotationView.m */,
+				67B9CC88155EA808003BC6CC /* GoalAnnotation.h */,
+				67B9CC89155EA808003BC6CC /* GoalAnnotation.m */,
+			);
+			name = Anotations;
+			sourceTree = "<group>";
+		};
+		67A2D221155ECC7D0055500E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				67A2D222155ECC920055500E /* JSON.h */,
+				67A2D223155ECC920055500E /* NSObject+SBJSON.h */,
+				67A2D224155ECC920055500E /* NSObject+SBJSON.m */,
+				67A2D225155ECC920055500E /* NSString+SBJSON.h */,
+				67A2D226155ECC920055500E /* NSString+SBJSON.m */,
+				67A2D227155ECC920055500E /* SBJSON.h */,
+				67A2D228155ECC920055500E /* SBJSON.m */,
+				67A2D229155ECC920055500E /* SBJsonBase.h */,
+				67A2D22A155ECC920055500E /* SBJsonBase.m */,
+				67A2D22B155ECC920055500E /* SBJsonParser.h */,
+				67A2D22C155ECC920055500E /* SBJsonParser.m */,
+				67A2D22D155ECC920055500E /* SBJsonWriter.h */,
+				67A2D22E155ECC920055500E /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		67B9CC60155EA2F7003BC6CC /* MapDirections */ = {
+			isa = PBXGroup;
+			children = (
+				67B9CC6A155EA338003BC6CC /* Library */,
+				67B9CC61155EA328003BC6CC /* CustomLoaderViewController.h */,
+				67B9CC62155EA328003BC6CC /* CustomLoaderViewController.m */,
+				67B9CC65155EA328003BC6CC /* MapPoint.h */,
+				67B9CC66155EA328003BC6CC /* MapPoint.m */,
+			);
+			name = MapDirections;
+			sourceTree = "<group>";
+		};
+		67B9CC6A155EA338003BC6CC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				67B9CC81155EA385003BC6CC /* MapKit Extension */,
+				67B9CC6B155EA34B003BC6CC /* Google Maps API */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		67B9CC6B155EA34B003BC6CC /* Google Maps API */ = {
+			isa = PBXGroup;
+			children = (
+				67B9CC6C155EA37C003BC6CC /* UICGDirections.h */,
+				67B9CC6D155EA37C003BC6CC /* UICGDirections.m */,
+				67B9CC6E155EA37C003BC6CC /* UICGDirectionsOptions.h */,
+				67B9CC6F155EA37C003BC6CC /* UICGDirectionsOptions.m */,
+				67B9CC70155EA37C003BC6CC /* UICGClientGeocoder.h */,
+				67B9CC71155EA37C003BC6CC /* UICGClientGeocoder.m */,
+				67B9CC72155EA37C003BC6CC /* UICGRoute.h */,
+				67B9CC73155EA37C003BC6CC /* UICGRoute.m */,
+				67B9CC74155EA37C003BC6CC /* UICGStep.h */,
+				67B9CC75155EA37C003BC6CC /* UICGStep.m */,
+				67B9CC76155EA37C003BC6CC /* UICGPolyline.h */,
+				67B9CC77155EA37C003BC6CC /* UICGPolyline.m */,
+				67B9CC78155EA37C003BC6CC /* UICGoogleMapsAPI.h */,
+				67B9CC79155EA37C003BC6CC /* UICGoogleMapsAPI.m */,
+			);
+			name = "Google Maps API";
+			sourceTree = "<group>";
+		};
+		67B9CC81155EA385003BC6CC /* MapKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				67B9CC82155EA392003BC6CC /* UICRouteOverlayMapView.h */,
+				67B9CC83155EA392003BC6CC /* UICRouteOverlayMapView.m */,
+				67B9CC84155EA392003BC6CC /* UICRouteAnnotation.h */,
+				67B9CC85155EA392003BC6CC /* UICRouteAnnotation.m */,
+			);
+			name = "MapKit Extension";
+			sourceTree = "<group>";
+		};
 		965148E314588B7900F812DB = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +367,7 @@
 		965148F114588B7A00F812DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67A2D29C155EE4060055500E /* libxml2.dylib */,
 				96F6E736145A01F400F744F4 /* CoreLocation.framework */,
 				96F6E734145A01CD00F744F4 /* MapKit.framework */,
 				965148F214588B7A00F812DB /* UIKit.framework */,
@@ -163,6 +380,13 @@
 		965148F814588B7A00F812DB /* andaenbici */ = {
 			isa = PBXGroup;
 			children = (
+				67A2D221155ECC7D0055500E /* JSON */,
+				67B9CC60155EA2F7003BC6CC /* MapDirections */,
+				6776ECB8155DC53900739ADE /* Anotations */,
+				67054B34155DC1A500527424 /* SynthesizeSingleton.h */,
+				67054B15155DBE0300527424 /* FowardGeocoding */,
+				67054B2B155DBF8600527424 /* STLocationEngine.h */,
+				67054B2C155DBF8600527424 /* STLocationEngine.m */,
 				9686F31B155DB0700092F5EA /* BaseMapBicisendaController.h */,
 				9686F31C155DB0700092F5EA /* BaseMapBicisendaController.m */,
 				9686F316155DB0500092F5EA /* Estacion.h */,
@@ -184,13 +408,14 @@
 				96E9233914599A4E00C8978B /* resources */,
 				9651490114588B7A00F812DB /* bicisendasAppDelegate.h */,
 				9651490214588B7A00F812DB /* bicisendasAppDelegate.m */,
-				9651490414588B7B00F812DB /* MainWindow.xib */,
 				9651490714588B7B00F812DB /* NovedadesViewController.h */,
 				9651490814588B7B00F812DB /* NovedadesViewController.m */,
 				9651490D14588B7B00F812DB /* FirstView.xib */,
 				965148F914588B7A00F812DB /* Supporting Files */,
 				96F6E7291459AA2F00F744F4 /* NewsPost.h */,
 				96F6E72A1459AA2F00F744F4 /* NewsPost.m */,
+				67A2D2A7155EEDA90055500E /* Directions.h */,
+				67A2D2A8155EEDAA0055500E /* Directions.m */,
 			);
 			name = andaenbici;
 			path = bicisendas;
@@ -231,6 +456,9 @@
 		96E9233914599A4E00C8978B /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				67A2D21F155EC2F60055500E /* api.html */,
+				67A2D212155EB5930055500E /* map_annotation_goal.png */,
+				67B9CC5A155EA138003BC6CC /* map_annotation_self.png */,
 				9686F302155DA2960092F5EA /* CiclovíasOri2.kml */,
 				9686F2FF155DA0630092F5EA /* CicloviasOri.kml */,
 				96E9233A14599A4E00C8978B /* 07-map-marker.png */,
@@ -284,6 +512,9 @@
 /* Begin PBXProject section */
 		965148E514588B7900F812DB /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 965148E814588B7900F812DB /* Build configuration list for PBXProject "andaenbici" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -308,7 +539,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				965148FD14588B7A00F812DB /* InfoPlist.strings in Resources */,
-				9651490614588B7B00F812DB /* MainWindow.xib in Resources */,
 				9651490F14588B7B00F812DB /* FirstView.xib in Resources */,
 				96E9233D14599A4E00C8978B /* 07-map-marker.png in Resources */,
 				96E9233E14599A4E00C8978B /* 103-map.png in Resources */,
@@ -319,6 +549,9 @@
 				9686F303155DA2960092F5EA /* CiclovíasOri2.kml in Resources */,
 				9686F311155DB01E0092F5EA /* EstacionDetail.xib in Resources */,
 				9686F31A155DB0500092F5EA /* Estaciones.xib in Resources */,
+				67B9CC5B155EA138003BC6CC /* map_annotation_self.png in Resources */,
+				67A2D213155EB5930055500E /* map_annotation_goal.png in Resources */,
+				67A2D220155EC2F60055500E /* api.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +598,36 @@
 				9686F315155DB03B0092F5EA /* EstacionesViewController.m in Sources */,
 				9686F319155DB0500092F5EA /* Estacion.m in Sources */,
 				9686F31D155DB0700092F5EA /* BaseMapBicisendaController.m in Sources */,
+				67054B1F155DBE2C00527424 /* BSForwardGeocoder.m in Sources */,
+				67054B20155DBE2C00527424 /* BSKmlResult.m in Sources */,
+				67054B21155DBE2C00527424 /* BSAddressComponent.m in Sources */,
+				67054B22155DBE2C00527424 /* NSString+URLEncode.m in Sources */,
+				67054B28155DBE4800527424 /* BSGoogleV2KmlParser.m in Sources */,
+				67054B29155DBE4800527424 /* BSGoogleV3KmlParser.m in Sources */,
+				67054B2D155DBF8600527424 /* STLocationEngine.m in Sources */,
+				67054B32155DC0C100527424 /* OwnPositionAnnotation.m in Sources */,
+				67054B33155DC0C100527424 /* OwnPositionAnnotationView.m in Sources */,
+				67B9CC67155EA328003BC6CC /* CustomLoaderViewController.m in Sources */,
+				67B9CC69155EA328003BC6CC /* MapPoint.m in Sources */,
+				67B9CC7A155EA37C003BC6CC /* UICGDirections.m in Sources */,
+				67B9CC7B155EA37C003BC6CC /* UICGDirectionsOptions.m in Sources */,
+				67B9CC7C155EA37C003BC6CC /* UICGClientGeocoder.m in Sources */,
+				67B9CC7D155EA37C003BC6CC /* UICGRoute.m in Sources */,
+				67B9CC7E155EA37C003BC6CC /* UICGStep.m in Sources */,
+				67B9CC7F155EA37C003BC6CC /* UICGPolyline.m in Sources */,
+				67B9CC80155EA37C003BC6CC /* UICGoogleMapsAPI.m in Sources */,
+				67B9CC86155EA392003BC6CC /* UICRouteOverlayMapView.m in Sources */,
+				67B9CC87155EA392003BC6CC /* UICRouteAnnotation.m in Sources */,
+				67B9CC8A155EA808003BC6CC /* GoalAnnotation.m in Sources */,
+				67F9AC66155EAB530093C8F3 /* GoalAnnotationView.m in Sources */,
+				67A2D21A155EB9AE0055500E /* PinAnnotation.m in Sources */,
+				67A2D22F155ECC920055500E /* NSObject+SBJSON.m in Sources */,
+				67A2D230155ECC920055500E /* NSString+SBJSON.m in Sources */,
+				67A2D231155ECC920055500E /* SBJSON.m in Sources */,
+				67A2D232155ECC920055500E /* SBJsonBase.m in Sources */,
+				67A2D233155ECC920055500E /* SBJsonParser.m in Sources */,
+				67A2D234155ECC920055500E /* SBJsonWriter.m in Sources */,
+				67A2D2A9155EEDAB0055500E /* Directions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,14 +656,6 @@
 				965148FC14588B7A00F812DB /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9651490414588B7B00F812DB /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9651490514588B7B00F812DB /* en */,
-			);
-			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
 		9651490D14588B7B00F812DB /* FirstView.xib */ = {
@@ -432,12 +687,13 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -448,13 +704,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -468,7 +725,12 @@
 				GCC_PREFIX_HEADER = "bicisendas/andaenbici-Prefix.pch";
 				INFOPLIST_FILE = "bicisendas/andaenbici-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Proyects/andaenbici/app/bicisendas/Twitter+OAuth/Libraries & Headers\"",
+				);
 				PRODUCT_NAME = andaenbici;
+				USER_HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -482,7 +744,12 @@
 				GCC_PREFIX_HEADER = "bicisendas/andaenbici-Prefix.pch";
 				INFOPLIST_FILE = "bicisendas/andaenbici-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Proyects/andaenbici/app/bicisendas/Twitter+OAuth/Libraries & Headers\"",
+				);
 				PRODUCT_NAME = andaenbici;
+				USER_HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2/**";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

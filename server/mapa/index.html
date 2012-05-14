@@ -45,7 +45,7 @@ function findRoute(to) {
 		
 		if (markerFrom && markerTo) {
 			deleteOverlay(routeLayer);
-			routeLayer = new google.maps.KmlLayer('http://andaenbici.services.cactus.ws/?startpoint=' + markerFrom.position.lat() + ',' + markerFrom.position.lng() + '&finalpoint=' + markerTo.position.lat() + ',' + markerTo.position.lng());
+			routeLayer = new google.maps.KmlLayer('http://andaenbici.cactus.ws/?startpoint=' + markerFrom.position.lat() + ',' + markerFrom.position.lng() + '&finalpoint=' + markerTo.position.lat() + ',' + markerTo.position.lng());
 			routeLayer.setMap(map);
 		}
     });		

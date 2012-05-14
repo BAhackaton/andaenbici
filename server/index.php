@@ -174,8 +174,8 @@ Este es un webservice que permite determinar el mejor camino para ir en bici ent
 <p>
 Donde
 <ul>
-<li><h3>origen</h3>Coordenadas del punto de origien, en formato <code>longitud,latitud</code>. Ejemplo: <code>startpoint=-34.555528,-58.462515</code> (Av. Cabildo y Av. Congreso)</li>
-<li><h3>destino</h3>Coordenadas del punto de origien, en formato <code>longitud,latitud</code>. Ejemplo: <code>finalpoint=-34.603291,-58.375229</code> (Florida y Av. Corrientes)</li>
+<li><h3>origen</h3>Coordenadas del punto de origien, en formato <code>latitud,longitud</code>. Ejemplo: <code>startpoint=-34.555528,-58.462515</code> (Av. Cabildo y Av. Congreso)</li>
+<li><h3>destino</h3>Coordenadas del punto de origien, en formato <code>latitud,longitud</code>. Ejemplo: <code>finalpoint=-34.603291,-58.375229</code> (Florida y Av. Corrientes)</li>
 <li><h3>formato (optional)</h3>Especifica el formato en que son devueltos los resultados. Los posibles valores son <code>json</code> y <code>kml (por defecto)</code>. KML se puede utilizar directamente con googlemaps poniendo la url del webservice en el campo de b&uacute;squeda <a href="http://maps.google.com/maps?q=$urlencoded%3Fstartpoint%3D-34.555528,-58.462515%26finalpoint%3D-34.603291,-58.375229%26&hl=es&sll=-34.547313,-58.47065&sspn=0.007264,0.013733&t=m&z=13" target="_blank">Ver ejemplo</a></li>
 </ul>
 </p>

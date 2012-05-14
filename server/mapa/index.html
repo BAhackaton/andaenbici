@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>AndáEnBici - La mejor ruta para ir en bici en Buenos Aires</title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&language=es&region=AR"></script>
+<script type="text/javascript">
+
+var map = null;
+var geocoder = null;
+var markerFrom = null;
+var markerTo = null;
+var routeLayer = null;
+
+function initialize() {
+	var buenosAiresParqueCentenario = new google.maps.LatLng(-34.607526,-58.435902);
+	var myOptions = {
+		zoom: 11,
+		center: buenosAiresParqueCentenario,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	}
+	
+	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+	geocoder = new google.maps.Geocoder();
+	
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(usePosition, locationError);
+	} else {
+		locationError()
+	}
+	
+}
+
+function findRoute(to) {
+	geocoder.geocode( {'address': to + ", Ciudad Autónoma de Buenos Aires", region: "AR" }, function(results, status) {
+		var item = results[0];
+		deleteOverlay(markerTo);
+		markerTo = new google.maps.Marker({
+		    position: item.geometry.location,
+		    map: map,
+		    title:item.formatted_address,
+		    icon: "images/map_annotation_goal.png"
+		});
+		
+		if (markerFrom && markerTo) {
+			deleteOverlay(routeLayer);
+			routeLayer = new google.maps.KmlLayer('http://andaenbici.services.cactus.ws/?startpoint=' + markerFrom.position.lat() + ',' + markerFrom.position.lng() + '&finalpoint=' + markerTo.position.lat() + ',' + markerTo.position.lng());
+			routeLayer.setMap(map);
+		}
+    });		
+} 
+
+function usePosition(position) {
+	deleteOverlay(markerFrom);
+	markerFrom = new google.maps.Marker({
+	    position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+	    map: map,
+	    title:"Estoy acá",
+	    icon: "images/map_annotation_self.png"
+	});
+}
+
+function locationError() {
+	alert("No podemos determinar tu punto de origen");
+}
+
+function deleteOverlay(overlay) {
+	if (overlay != null) {
+		overlay.setMap(null);
+	}
+}	
+</script>
+<style>
+body, html {
+	position: relative;
+	height: 100%;
+	margin: 0;
+	font: Lucida Grande, Arial, Helvetica, sans-serif;
+}
+#map_canvas {
+	position: absolute;
+	top: 2em;
+	bottom: 0;
+	width: 100%;
+}
+.header {
+	background: #FED408;
+	height: 2em;
+	line-height: 2em;
+	vertical-align: middle;
+	padding-left: 10px;
+}
+</style>
+</head>
+<body onload="initialize()">
+	<div class="header">
+	    <form action="#" onsubmit="findRoute(this.to.value); return false">
+	        Voy en bici a: 
+	        <input type="text" style="width:250px" name="to" value="" />
+	        <input type="submit" value="Ir!" />
+	    </form>
+    </div>
+    <div id="map_canvas"></div>
+</body>
+</html>

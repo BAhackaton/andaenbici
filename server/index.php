@@ -26,15 +26,15 @@
    $startEdge = findNearestEdge($startPoint, $dbcon);
    $endEdge   = findNearestEdge($endPoint, $dbcon);
 
+   // lamentablemente el shapefile no tiene las lineas puestas en el sentido de las calles
    $sql = 	"SELECT nomb_ca_co as nombre, least(alt_ii, alt_di) as desde, greatest(alt_if, alt_df) as hasta, tipo_c, tiene_ciclovia, ST_AsGeoJSON(geom) as geom FROM shortest_path('
                 SELECT gid as id,
                          source::integer,
                          target::integer,
-                         peso::double precision as cost,
-			 case when tiene_ciclovia and not ciclovia_mano_unica then peso::double precision else 5000* peso::double precision end as reverse_cost
+                         peso::double precision as cost
                         FROM " . TABLE . "',
                 ".$startEdge['source'].",
-                ".$endEdge['target'].", true, true) sp left join " . TABLE . " c2 on c2.gid = sp.edge_id";
+                ".$endEdge['target'].", false, false) sp left join " . TABLE . " c2 on c2.gid = sp.edge_id";
 
    // Perform database query
    $query = pg_query($dbcon,$sql); 
@@ -159,6 +159,10 @@ EOT;
    function merge_points($oldPoints, $newPoints) {
 	if( end($oldPoints) == reset($newPoints) ){
 		array_pop($oldPoints);
+	} else if (end($oldPoints) == end($newPoints)) {
+		// Estoy tomando la calle alrevez
+		array_pop($oldPoints);
+		$newPoints = array_reverse($newPoints);
 	}
 	return array_merge($oldPoints, $newPoints);
    }

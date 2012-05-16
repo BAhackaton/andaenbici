@@ -157,6 +157,7 @@ EOT;
 
 
    function merge_points($oldPoints, $newPoints) {
+
 	if( end($oldPoints) == reset($newPoints) ){
 		array_pop($oldPoints);
 	} else if (end($oldPoints) == end($newPoints)) {
@@ -164,6 +165,7 @@ EOT;
 		array_pop($oldPoints);
 		$newPoints = array_reverse($newPoints);
 	}
+	
 	return array_merge($oldPoints, $newPoints);
    }
 

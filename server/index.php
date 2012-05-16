@@ -30,10 +30,11 @@
                 SELECT gid as id,
                          source::integer,
                          target::integer,
-                         peso::double precision as cost
+                         peso::double precision as cost,
+			 case when tiene_ciclovia and not ciclovia_mano_unica then peso::double precision else 5000* peso::double precision end as reverse_cost
                         FROM " . TABLE . "',
                 ".$startEdge['source'].",
-                ".$endEdge['target'].", false, false) sp left join " . TABLE . " c2 on c2.gid = sp.edge_id";
+                ".$endEdge['target'].", true, true) sp left join " . TABLE . " c2 on c2.gid = sp.edge_id";
 
    // Perform database query
    $query = pg_query($dbcon,$sql); 
